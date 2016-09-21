@@ -1,0 +1,520 @@
+@charset "utf-8";
+html{
+    height: 100%;
+    min-width: 1000px;
+    overflow: hidden;
+}
+body{
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    overflow: hidden;
+    font-size: 100%;
+}
+.block{
+    display: block;
+}
+.none{
+    display: none;
+}
+#web_lead{
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+}
+#web_lead p{
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "微软雅黑" , arial，Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+    background: rgba(80, 195, 180, 0.3);
+    color: #2c8da9;
+}
+#right_iconFont{
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    bottom: 20px;
+}
+#right_iconFont p{
+    text-align: center;
+}
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#aside{
+    position: absolute;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background: #22c3aa;
+    z-index: 10;
+}
+#photo{
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#photo img{
+    width: 100%;
+    height: 100%;
+}
+#content{
+    width: 100%;
+}
+#content ul{
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+}
+#content ul li{
+    line-height: 1.8;
+    font-family: "微软雅黑" , arial，Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    color: #ffffff;
+    cursor: pointer;
+}
+.active_li{
+    background: #ffffff;
+    color: #22c3aa;
+}
+#content ul li.active_li{
+    /*background-image: url('../icon/li_bg.gif');*/
+    /*background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position:0 0;*/
+    background: #ffffff;
+    color: #22c3aa;
+}
+#content ul li .text_left{
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+}
+#content ul li .text_center{
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+}
+#name{
+    margin: 20px auto;
+    width: 100%;
+    font-family: "微软雅黑" , arial，Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+#my_blog{
+    margin: 20px auto;
+    width: 100%;
+}
+#my_blog p{
+    width: 100%;
+    font-family: "微软雅黑" , arial，Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+
+    -moz-transition:  all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#my_blog p:hover{
+    text-shadow: 5px 5px 15px #00a58a;
+}
+
+#container{
+    display: inline-block;
+    position: relative;
+    left: 280px;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+}
+#aside_btn{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 10px 20px;
+}
+#aside_btn img{
+    padding: 0 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#main_container{
+    position: relative;
+    padding: 0 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+#kills{
+    width: 80%;
+    height: 80%;
+    margin: 20px auto;
+}
+.kill_bg{
+    height:50px;
+    margin-top: 20px;
+    /*background: linear-gradient(to right,rgb(255,255,255),rgba(255,255,255,0.5));*/
+    background: #ffffff;
+}
+.kill_bg span{
+    display: inline-block;
+    height: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    font-family: "微软雅黑" , arial，Helvetica, sans-serif;
+    color: #ffffff;
+}
+.kill_o_bg{
+    position: absolute;
+    height: 50px;
+}
+.tip{
+    position: relative;
+    top: -100%;
+    left: 100px;
+    background: #ffffff !important;
+    z-index: 10;
+
+    box-shadow: 0 0 2px #00a58a;
+}
+.tip ul{
+    list-style: none;
+    margin: 10px 30px;
+}
+.tip ul li{
+    font-family: "微软雅黑" , arial，Helvetica, sans-serif;
+    font-size: 0.875em;
+    line-height: 1.5;
+}
+#javascript{
+    position: relative;
+    border-left: 5px solid #34a2df;
+}
+#javascript div{
+    width: 80%;
+    background: rgb(157, 210, 255);
+}
+#javascript span{
+    position: relative;
+    color:#2a7da9;
+}
+#html{
+    position: relative;
+    border-left: 5px solid #34a2df;
+}
+#html div{
+    width: 70%;
+    background: rgb(157, 210, 255);
+}
+#html span{
+    position: relative;
+    color:#2a7da9;
+}
+#css{
+    position: relative;
+    border-left: 5px solid #34a2df;
+}
+#css div{
+    width: 60%;
+    background: rgb(157, 210, 255);
+}
+#css span{
+    position: relative;
+    color:#2a7da9;
+}
+#jquery{
+    position: relative;
+    border-left: 5px solid #34df75;
+}
+#jquery div{
+    width: 70%;
+    background: rgb(169, 255, 192);
+}
+#jquery span{
+    position: relative;
+    color: #34df75;
+}
+#angularJs{
+    position: relative;
+    border-left: 5px solid #df565d;
+}
+#angularJs div{
+    width: 60%;
+    background: rgb(255, 196, 206);
+}
+#angularJs span{
+    position: relative;
+    color: #df565d;
+}
+#sql{
+    position: relative;
+    border-left: 5px solid #df3e58;
+}
+#sql div{
+    width: 40%;
+    background: rgb(223, 158, 150);
+}
+#sql span{
+    position: relative;
+    color: #df3e58;
+}
+#php{
+    position: relative;
+    border-left: 5px solid #8b26df;
+}
+#php div{
+    width: 30%;
+    background: rgb(187, 154, 223);
+}
+#php span{
+    position: relative;
+    color: #8b26df;
+}
+
+/*项目经验*/
+#item_experience{
+    width: 80%;
+    height: 80%;
+    margin: 20px auto;
+}
+#item_experience h2{
+    margin: 5px 0;
+    color: #555;
+    font-size: 20px;
+    font-family: "微软雅黑" , arial，Helvetica, sans-serif;
+}
+#item_experience div{
+    margin: 25px auto;
+    font-family: "楷体" , arial，Helvetica, sans-serif;
+}
+#item_experience span{
+    color: #666;
+}
+
+/*实习经历*/
+#internships{
+    width: 80%;
+    height: 80%;
+    margin: 10px auto;
+    font-family: "微软雅黑" , arial，Helvetica, sans-serif;
+    font-size: 20px;
+    color: #666;
+}
+#internships .internships-item-con{
+    font-size: 20px;
+    font-family: "楷体" , arial，Helvetica, sans-serif;
+}
+#internships p{
+    margin: 10px 0;
+}
+#internships span{
+    color: #555;
+}
+#internships ol{
+    margin-left: 50px;
+}
+#internships li{
+    margin: 8px 0;
+    font-family: "楷体" , arial，Helvetica, sans-serif;
+}
+
+/*教育经历*/
+#education{
+    width: 80%;
+    height: 80%;
+    margin: 20px auto;
+}
+#wit_pic{
+    width: 100%;
+    padding: 0 40%;
+    margin: 10px auto;
+}
+#wit_pic img{
+    width: 20%;
+}
+#pe_education ul{
+    list-style: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+}
+#pe_education ul li{
+    font-family: "楷体" , arial，Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    color: #444444;
+}
+
+#want_job{
+    width: 80%;
+    height: 80%;
+    margin: 20px auto;
+}
+#web_logo{
+    width: 100%;
+    padding: 0 35%;
+    margin: 10px auto;
+}
+#web_logo img{
+    width: 30%;
+}
+#web_job{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    font-family: "微软雅黑" , arial，Helvetica, sans-serif;
+}
+#web_job h2{
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: #444444;
+    text-shadow: 0 0 5px #666666;
+
+    -moz-transition:  -moz-transform 0.5s;
+    -webkit-transition: -webkit-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+}
+#web_job h3{
+    font-size: 1.5em;
+    line-height: 2;
+    color: #444444;
+    text-shadow: 5px 5px 5px #666666;
+
+    -moz-transition:  -moz-transform 0.5s;
+    -webkit-transition: -webkit-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+}
+#web_job p{
+    line-height: 1.5;
+    text-shadow: 2px 2px 2px #888888;
+    font-weight: bold;
+
+    -moz-transition:  -moz-transform 0.5s;
+    -webkit-transition: -webkit-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+}
+#web_job h2:hover, #web_job h3:hover, #web_job p:hover{
+    -ms-transform: scale(1.2,1.2);	/* IE 9 */
+    -webkit-transform: scale(1.2,1.2);	/* Safari 和 Chrome */
+    -o-transform: scale(1.2,1.2);	/* Opera */
+    -moz-transform: scale(1.2,1.2);	/* Firefox */
+    transform: scale(1.2,1.2);
+}
+
+#contact{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+}
+#contact div{
+    position: absolute;
+    /*vertical-align: middle;*/
+}
+#my_phone{
+    left: 0%;
+    top: 20%;
+}
+#my_email{
+    left: 20%;
+    top: 0%;
+}
+#my_qq{
+    left: 45%;
+    top: 30%;
+}
+#my_weibo{
+    left: 65%;
+    top: 50%;
+}
+#my_github{
+    left: 80%;
+    top: 10%;
+}
+#contact div span{
+    position: absolute;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0;
+    font-family: "Romantic" , arial，Helvetica, sans-serif;
+    color: #ffffff;
+    background: #22c3aa;
+    font-size: 1.25em;
+    line-height: 2em;
+
+    cursor: pointer;
+}
+/*#contact_ifo{*/
+    /*width: 60%;*/
+    /*margin: 20px auto;*/
+/*}*/
+/*#contact_ifo ul{*/
+    /*list-style: none;*/
+    /*display: block;*/
+    /*width: 100%;*/
+/*}*/
+/*#contact_ifo ul li{*/
+    /*float: left;*/
+    /*display: inline-block;*/
+    /*margin: 0 auto;*/
+    /*line-height: 1.5;*/
+    /*font-family: "微软雅黑" , arial，Helvetica, sans-serif;*/
+    /*font-size: 1em;*/
+    /*font-weight: lighter;*/
+    /*cursor: pointer;*/
+/*}*/
+/*#commit{*/
+    /*clear: left;*/
+/*}*/
+/*#commit div{*/
+    /*margin: 20px 0;*/
+    /*padding: 0;*/
+    /*display: inline-block;*/
+    /*width: 50%;*/
+/*}*/
+/*#commit div img{*/
+    /*display: inline-block;*/
+    /*width: 30%;*/
+    /*cursor: pointer;*/
+/*}*/
+/*#weibo{*/
+    /*margin-left: 50% ;*/
+/*}*/
+/*#github{*/
+    /*margin-left: 20% ;*/
+/*}*/
